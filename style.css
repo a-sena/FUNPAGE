@@ -1,0 +1,265 @@
+*{
+  padding: 0;
+  margin: 0; 
+  box-sizing: border-box;
+  font-size: 18px;
+}
+body{
+   display: grid;
+   grid-template-areas: 
+   "header"
+   "content"
+   "footer";
+   height: 2000px;
+   grid-template-rows: 100px 1fr 400px;
+
+}
+/*
+div{
+   background: lightgray;
+   border: thin solid black;
+}
+*/
+#content{
+   display: grid;
+   grid-template-rows: 3fr 7fr ;
+   background: lightgrey;
+
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #99bbff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border: 1px dotted black;
+  
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#mySidebar ul li a:hover{
+  background:#ff6e00;
+  border-radius: 2px;
+}
+
+.openbtn {
+  font-size: 26px;
+  cursor: pointer;
+  background-color: #99bbff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: white;
+}
+
+#main {
+  position: fixed;
+  transition: margin-left 0.5s;
+  padding: 24px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #99bbff;
+  min-height: 54px;
+}
+.logo{
+    position: fixed;
+    display: block;
+    max-width: 125px;
+    display: inline;
+    right: 5px;
+    top: 5px;
+
+    
+}
+.header{
+    
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    
+}
+
+/*<--FUN PAGE START-->*/
+
+ /*<---The box that includes little pictures,buttons-->*/
+.body{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to bottom,whitesmoke 20%,whitesmoke 100%),url(funinoslo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+ .heading{
+   width: 30%;
+   text-align: center;
+   color: #000;
+   font-family: Arial,Helvetica,sans-serif;
+   line-height: 1.4;
+   font-size: 18px;
+ }
+ .heading h1{
+   font-size: 40px;
+
+ }
+
+ 
+ .tours{
+   width: 70%;
+   display: flex;
+   justify-content: space-around;
+
+ }
+ .places{
+   display: inline;
+   text-align: center;
+   border-radius: 12px;
+
+ }
+ /*<---The orange boxes over the little pictures-->*/
+ .places h2{
+   color: white;
+   font-size: 22px;
+   letter-spacing: 3px;
+   border-radius: 8px;
+   padding: 30px 30px;
+   margin-bottom: 1px;
+   background-color: orange;
+ }
+ 
+ 
+/*<-------SEE MORE BUTTONS----->*/
+.btn{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius:12px;
+  padding:12px 30px;
+  border: .2rem solid black;
+  color: black;
+  cursor: pointer;
+  background: none;
+display: inline-block;
+}
+.btn:hover{
+  background: orange;
+  color: #fff;
+}
+/*<---FINISH-->*/
+/*<---small picture frames-->*/
+.places img{
+  border:3px solid orange
+
+}
+/*<---Big title, with text"FUN" in a decorated orange box-->*/
+.body .heading h1{
+
+  color: var(--black);
+  font-size: 3rem;
+
+}
+/* <----Make Tittle "Fun" ->Orange Fun--->*/
+.body .heading h1 span{
+  color:orange;
+  font-size: 3rem;
+}
+/*<----Finish --->*/
+
+/*<----Start to make Read More Button-->*/
+.heading a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 45px;
+  padding: 14px 50px;
+  background-color: #fff;
+}
+.heading a:hover{
+  letter-spacing: 3px;
+  transition: 0.6s;
+}
+
+/*<----Finish read more button--->*/
+
+/*<----Font size of texts-->*/
+.æ{
+  font-size: 40px;
+}
+/*<--FINISH-->*/
+
+/*<---TITLE "FUN IN OSLO"-->*/
+#å{
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+
+}
+/*<-----Enclose text "Fun"in an decorated orange box-->*/
+#å span{
+  background: orange;
+  color: #fff;
+  display: inline-block;
+  padding: .5rem 3rem;
+  font-size: 3.5rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+
+}
+/*<----Finish decorated box--->*/
+/*<---Texts under title "FUN IN OSLO"-->*/
+.text-section{
+  margin-top: -800px;
+}
+.text-section p{
+
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 1.4;
+    font-size: 18px;
+
+}
+.text-section .containert {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+.text-section .containert img{
+  margin-left: auto;
+  margin-right: auto;
+}
+/*<---Finish texts-->*/
+/*<---FINISH FUN PAGE*/
